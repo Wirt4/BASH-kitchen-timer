@@ -3,6 +3,7 @@
 # can possibly add some mod logic and rewrite a whole time stamp to make it efficient for 1-2 minute spans alternatively, write a script in python, and set an alias for that
 (
 at -m now + $1 minutes << EOT
+#note the filepath here, if you implement this will need your own
 aplay ~/Sounds/alarm-clock-1.wav
 EOT
 ) &>/dev/null
